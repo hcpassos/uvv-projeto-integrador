@@ -89,9 +89,9 @@ def main():
         st.session_state.selected_tax_class = col1.text_input('Grupo de imposto atualmente:', random_data['TAX_CLASS_AT_PRESENT'][0], disabled=True)
         st.session_state.selected_sale_monthyear = col1.text_input('Ano e mês da venda: (YYYY/MM)', random_data['SALE_MONTHYEAR'][0], disabled=True)
         st.session_state.selected_building_main_class = col1.text_input('Classe de construção (Matriz):', random_data['BUILDING_MAIN_CLASS'][0], disabled=True)
-        st.session_state.total_units = st.session_state.residential_units + st.session_state.commercial_units
         st.session_state.residential_units = col1.number_input('Unidades Residenciais:', value=random_data['RESIDENTIAL_UNITS'][0], disabled=True)
         st.session_state.commercial_units = col1.number_input('Unidades Comerciais:', value=random_data['COMMERCIAL_UNITS'][0], disabled=True)
+        st.session_state.total_units = st.session_state.residential_units + st.session_state.commercial_units
         st.session_state.land_square_feet = col1.number_input('Tamanho do terreno (ft²):', value=random_data['LAND_SQUARE_FEET'][0], disabled=True)
         st.session_state.gross_square_feet = col1.number_input('Tamanho bruto do terreno (ft²):', value=st.session_state.land_square_feet * np.random.uniform(1.0,1.25),disabled=True)
         st.session_state.decade_built = col1.number_input('Década de construção:', value=random_data['DECADE_BUILT'][0], disabled=True)
