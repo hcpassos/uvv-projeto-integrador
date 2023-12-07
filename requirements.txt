@@ -3,4 +3,4 @@ pandas
 joblib
 statsmodels
 numpy
-scikit-learn
+scikit-learn==1.2.2
