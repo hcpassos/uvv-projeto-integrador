@@ -1,0 +1,5 @@
+streamlit
+pandasd
+joblib
+statsmodels
+numpy
